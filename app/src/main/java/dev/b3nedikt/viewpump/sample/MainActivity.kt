@@ -5,6 +5,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.ViewPumpAppCompatDelegate
+import com.useinsider.insider.Insider
 import dev.b3nedikt.app_locale.AppLocale
 import dev.b3nedikt.app_locale.AppLocale.currentLocale
 import dev.b3nedikt.app_locale.AppLocale.desiredLocale
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
             }
             button.text = getString(R.string.regular_button)
         }
+
+        Insider.Instance.visitHomePage()
     }
 
     override fun getDelegate(): AppCompatDelegate {

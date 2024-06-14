@@ -1,5 +1,6 @@
 [versions]
 
+googleServices = "4.4.2"
 kotlin = "1.9.22"
 agp = "8.2.0"
 dokka = "1.9.10"
@@ -7,9 +8,16 @@ dokka = "1.9.10"
 appCompat = "1.6.1"
 
 appLocale = "3.1.0"
+lifecycle-process = "2.5.1"
+
+security-crypto = "1.1.0-alpha06"
+insider = "14.2.4-nh"
+
+firebase-messaging = "23.1.1"
+play-services-location = "21.0.1"
+play-review = "2.0.1"
 
 [libraries]
-
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib" }
 kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
 
@@ -21,9 +29,15 @@ appCompat = { module = "androidx.appcompat:appcompat", version.ref = "appCompat"
 
 appLocale = { module= "dev.b3nedikt.applocale:applocale" , version.ref = "appLocale" }
 
+lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycle-process"}
+security-crypto = { module = "androidx.security:security-crypto", version.ref = "security-crypto"}
+
+firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebase-messaging" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "play-services-location" }
+play-review = { module = "com.google.android.play:review", version.ref = "play-review" }
+
+insider = { module = "com.useinsider:insider", version.ref = "insider" }
+
 [plugins]
 
-android-application = { id = "com.android.application", version.ref = "agp" }
-android-library = { id = "com.android.library", version.ref = "agp" }
-
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
